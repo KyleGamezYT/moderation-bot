@@ -6,3 +6,4 @@ You will have to install a few requirements
 [Visual Studio Code](https://code.visualstudio.com)
 Install the packages using `npm install`
 # `Commands`
+`ping` - Bot Latency.
