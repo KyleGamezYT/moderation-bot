@@ -18,6 +18,12 @@ module.exports = {
       return message.channel.send(`>>> 🤖| I cant report ${args[0]} Due to being a Bot.`);
     }
 
+      if (message.author.id === user.id) {
+      return message.channel.send("You can not warn yourself");
+    }
+   if (message.mentions.users.first() === message.guild.owner.id) {
+
+   }
     }
  }
 }

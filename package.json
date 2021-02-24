@@ -1,0 +1,26 @@
+{
+  "name": "moderation-bot-1",
+  "version": "1.0.0",
+  "description": "A Discord Moderation bot that will help your server. No database like MongoDB. Here are some emojis: 🔨 # How to setup You will have to install a few requirements [NodeJS](https://nodejs.org) [Visual Studio Code](https://code.visualstudio.com) Install the packages using `npm install` # `Commands` `ping` - Bot Latency.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KyleGamezYT/moderation-bot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KyleGamezYT/moderation-bot/issues"
+  },
+  "homepage": "https://github.com/KyleGamezYT/moderation-bot#readme",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "jsonfile": "^6.1.0",
+    "quick.db": "^7.1.3",
+    "random": "^2.2.0"
+  }
+}
