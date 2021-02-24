@@ -9,4 +9,5 @@ Go to the Path ../structres/client.js and go to `this.prefix =` And set your pre
 Go to the index.js and Delete the `YOUR TOKEN HERE` 
 # `Commands`
 `ping` - Bot Latency.
+
 `report` - Reports a user from your Guild.
