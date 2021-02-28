@@ -11,8 +11,8 @@ module.exports = {
   run: aysnc(client, message, args) => {
      if (!message.member.hasPermission("MANAGE_MESSAGES")) {
       return message.channel.send(
-        `>>> **Permissions Error**
-         You need the following permissions: MANAGE_MESSAGES.`
+        `>>> ❌| Oops, It looks like you do not have the Right permissions to use this command.
+        👮‍♂️| Required Permissions:  MANAGE_MESSAGES.`
       );
     }
 
@@ -26,7 +26,7 @@ module.exports = {
     }
 
     if (message.mentions.users.first().bot) {
-      return message.channel.send("You can not warn bots");
+      return message.channel.send(` ${args[0]} Is a bot.`);
     }
 
     if (message.author.id === user.id) {
