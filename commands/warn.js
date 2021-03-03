@@ -26,24 +26,22 @@ module.exports = {
     }
 
     if (message.mentions.users.first().bot) {
-      return message.channel.send(` ${args[0]} Is a bot.`);
+      return message.channel.send(`🤖 ${args[0]} Is a bot.`);
     }
 
     if (message.author.id === user.id) {
-      return message.channel.send("You can not warn yourself");
+      return message.channel.send("");
     }
 
     if (user.id === message.guild.owner.id) {
-      return message.channel.send(
-        "You jerk, how you can warn server owner -_-"
-      );
+      return message.channel.send("👑| Why do you want to warn the owner?! You cant do that!");
     }
 
     const reason = args.slice(1).join(" ");
 
     if (!reason) {
       return message.channel.send(
-        "Please provide reason to warn - warn @mention <reason>"
+        `📰| You must porvide a reason for ${args[0]}'s warn. `
       );
     }
 
@@ -52,25 +50,37 @@ module.exports = {
     if (warnings === null) {
       db.set(`warnings_${message.guild.id}_${user.id}`, 1);
       user.send(
-        `You have been warned in **${message.guild.name}** for ${reason}`
+        `📜| Warned - ${message.guild.name} 
+        💡|Reason: ${reason}
+         👮‍♂️ | Moderator: ${message.author}`
       );
       await message.channel.send(
-        `You warned **${
+        `💡|**Warn Given**
+        🤵| User: **${
           message.mentions.users.first().username
-        }** for ${reason}`
+        }**
+        📜|Reason: **${reason}**
+        👮‍♂️| Moderator: ${message.author}`
       );
     } else if(warnings !== null) {
       
       db.add(`warnings_${message.guild.id}_${user.id}`, 1);
       
-      user.send(`You have been warned in **${message.guild.name}** for ${reason}`);
+      user.send(`📜| Warned - ${message.guild.name} 
+        💡|Reason: ${reason}
+         👮‍♂️ | Moderator: ${message.author}`);
       
-      await message.channel.send(`You warned **${message.mentions.users.first().username}** for ${reason}`);
+      await message.channel.send(`💡|**Warn Given**
+        🤵| User: **${
+          message.mentions.users.first().username
+        }**
+        📜|Reason: **${reason}**
+        👮‍♂️| Moderator: ${message.author}`);
       
-      message.delete
+      message.delete()
       
     }
   }
-};
+}
   }
 }
