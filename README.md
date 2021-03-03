@@ -11,3 +11,4 @@ Go to the index.js and Delete the `YOUR TOKEN HERE`
 `ping` - Bot Latency.
 
 `report` - Reports a user from your Guild.
+
