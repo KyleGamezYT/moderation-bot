@@ -30,7 +30,7 @@ module.exports = {
     }
 
     if (message.author.id === user.id) {
-      return message.channel.send("");
+      return message.channel.send("❓| Why do you want to warn yourself?!?!");
     }
 
     if (user.id === message.guild.owner.id) {
@@ -81,6 +81,3 @@ module.exports = {
       
     }
   }
-}
-  }
-}
