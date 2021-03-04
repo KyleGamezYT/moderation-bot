@@ -30,4 +30,4 @@ The commands of your bot.
 
 `awarn` Unknownly Warns a user
 # Run on Repl.it
-Run on Repl.it [Here](https://repl.it/github/KyleGamezYT/moderation-bot)
+Run on Repl.it:  [![Run on Repl.it](https://repl.it/badge/github/KyleGamezYT/moderation-bot)](https://repl.it/github/KyleGamezYT/moderation-bot)
