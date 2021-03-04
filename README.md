@@ -22,6 +22,5 @@ The commands of your bot.
 `warn` - warns a user.
 
 `awarn` Unknownly Warns a user
-# Run on Glitch/Repl It 
+# Run on Repl.it
 Run on Repl.it [Here](https://repl.it/github/KyleGamezYT/moderation-bot)
-Run on Glitch [Here]()
