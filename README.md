@@ -7,8 +7,15 @@ You will have to install a few requirements
 [Visual Studio Code](https://code.visualstudio.com)
 [Discord Developer Portal](https://discord.com/developers/applications)
 Click on new application
-Then type your name on the Box then click `Create`
-Then, Go to `Bot` Then click on Add Bot and Yes.
+
+![04b11dbfa8054b612492056212086c12](https://user-images.githubusercontent.com/79540233/109958347-21ebef80-7cb4-11eb-9881-e2ed6a2d02f8.png)
+
+Then Click on **Bot**
+
+![74db12aaa807d8acd1ba1cb36b3c3c0d](https://user-images.githubusercontent.com/79540233/109958664-71cab680-7cb4-11eb-8b7a-d74ab11335c7.png)
+
+Click on Add Bot, Yes.
+
 **NOTE: TREAT YOUR BOT TOKEN AS YOUR PASSWORD. IF A HACKER HAS IT, YOUR SERVER WILL BE NUKED/HACKED.**
 Install the packages using `npm install`
 Go to the Path ../structres/client.js and go to `this.prefix =` And set your prefix.
