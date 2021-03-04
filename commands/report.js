@@ -20,7 +20,7 @@ module.exports = {
     }
 
       if (message.author.id === user.id) {
-      return message.channel.send("You can not warn yourself");
+      return message.channel.send(">>> ❓| Why do you want to report yourself? You cant do that!`");
     }
    if (message.mentions.users.first() === message.guild.owner.id) {
    return message.channel.send(`👑| ${args[0]} Is the owner of ${message.guild.name}.`);

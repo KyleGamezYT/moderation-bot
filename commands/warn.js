@@ -20,8 +20,7 @@ module.exports = {
 
     if (!user) {
       return message.channel.send(
-        `>>> **Indexing Error**
-        User Not found: `
+        `>>> 🔎| I didnt find a user called ${args[0]} `
       );
     }
 

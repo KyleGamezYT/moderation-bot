@@ -20,8 +20,7 @@ module.exports = {
 
     if (!user) {
       return message.channel.send(
-        `>>> **Indexing Error**
-        User Not found: `
+        `>>>🔎${args[0]} Is Not a member of your Guild. `
       );
     }
 
@@ -50,7 +49,7 @@ module.exports = {
     if (warnings === null) {
       db.set(`warnings_${message.guild.id}_${user.id}`, 1);
       user.send(
-        `📜| Warned - ${message.guild.name} 
+        `>>📜| Warned - ${message.guild.name} 
         💡|Reason: ${reason}
          👮‍♂️ | Moderator: Unknown`
       );
