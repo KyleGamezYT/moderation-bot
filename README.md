@@ -1,5 +1,6 @@
+![Untitled](https://user-images.githubusercontent.com/79540233/110125719-a2345280-7d91-11eb-869f-09254d42f95c.jpg)
 # moderation-bot
-A Discord Moderation bot that will help your server. No database like MongoDB. Here are some emojis: 🔨
+A Discord Moderation bot that will help your server.
 
 # How to setup
 You will have to install a few requirements
